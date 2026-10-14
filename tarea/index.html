@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de tareas</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 480px; margin: 40px auto; }
+    .completada { text-decoration: line-through; color: gray; }
+    .error { color: red; }
+    li { margin-bottom: 6px; }
+    li button { margin-left: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Lista de tareas</h1>
+
+  <form id="formTarea">
+    <input type="text" id="campoTarea" placeholder="Nueva tarea">
+    <button type="submit" id="btnAgregar" disabled>Agregar</button>
+  </form>
+  <p id="mensajeError" class="error"></p>
+
+  <ul id="listaTareas"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
